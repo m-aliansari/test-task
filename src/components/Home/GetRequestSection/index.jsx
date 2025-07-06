@@ -1,9 +1,7 @@
-import React from "react";
 import styles from "./GetRequestSection.module.scss";
 import Card from "./Card";
 import Button from "~/components/common/Button";
 import Loader from "~/components/common/Loader";
-import { JOB_TITLE_VALUE_TO_LABEL_MAP } from "~/constants/signup";
 
 const LoaderJSX = (
   <div

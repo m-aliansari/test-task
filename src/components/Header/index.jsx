@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Header.module.scss";
 import Logo from "~/assets/Logo.svg";
 import Button from "../common/Button";

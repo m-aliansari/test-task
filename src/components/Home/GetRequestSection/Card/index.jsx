@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import styles from "./Card.module.scss";
 import Tooltip from "~/components/common/Tooltip";
 import placeHolderImage from "~/assets/photo-cover.svg?w=70&h=70";

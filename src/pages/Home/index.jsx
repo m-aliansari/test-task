@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { getAllPositions } from "~/api/positions";
 import { getUsers } from "~/api/users";
 import GetRequestSection from "~/components/Home/GetRequestSection";

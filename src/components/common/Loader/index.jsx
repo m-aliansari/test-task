@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Loader({ size = 48, color = "#00BDD3", strokeWidth = 6 }) {
   // Arc math
   const radius = (size - strokeWidth) / 2;

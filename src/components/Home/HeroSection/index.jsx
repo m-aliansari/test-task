@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./HeroSection.module.scss";
 import Button from "~/components/common/Button";
 import hero500 from "~/assets/pexels-alexandr-podvalny-1227513.jpeg?w=500&format=webp"

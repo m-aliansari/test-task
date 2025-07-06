@@ -30,10 +30,8 @@ export default defineConfig({
     },
     build: {
         sourcemap: true, // This enables source map generation
-    },
-    server: {
-        headers: {
-            "cache-control": "max-age=86400"
+        rollupOptions: {
+            treeshake: 'smallest'
         }
     }
 })

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./PostRequestSection.module.scss";
 import SignupForm from "./SignupForm";
 import successImage from "~/assets/success-image.svg";

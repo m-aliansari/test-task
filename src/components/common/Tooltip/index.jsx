@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./Tooltip.module.scss";
 
 export default function Tooltip({ children, content }) {
