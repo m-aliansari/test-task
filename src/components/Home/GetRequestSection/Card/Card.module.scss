@@ -1,0 +1,42 @@
+.container {
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 370px;
+
+    @include bp.respond-desktop {
+        border-radius: 16px;
+        max-width: 282px;
+    }
+
+    @include bp.respond-tablet {
+        max-width: 344px;
+        border-radius: 10px;
+    }
+
+    @include bp.respond-mobile {
+        max-width: 328px;
+    }
+}
+
+.cardImage {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cardText {
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}

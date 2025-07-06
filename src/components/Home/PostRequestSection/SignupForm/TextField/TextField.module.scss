@@ -1,0 +1,78 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &.error .input {
+        border-color: #CB3D40;
+        border-width: 2px;
+    }
+
+    &.error .label {
+        color: #CB3D40;
+    }
+
+    &.error .label.float {
+        color: #CB3D40;
+    }
+
+    &.error .helper {
+        color: #CB3D40;
+    }
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &.focus .label,
+    &.filled .label {
+        top: -6px;
+        font-size: 12px;
+        background: white;
+        padding: 0 4px;
+        color: #7E7E7E;
+    }
+}
+
+.input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 1px solid #D0CFCF;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.label {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    font-size: 16px;
+    color: #777;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.label.float {
+    top: -6px;
+    font-size: 12px;
+    background: white;
+    padding: 0 4px;
+    color: #7E7E7E;
+}
+
+.helper {
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 15px;
+    color: #7E7E7E;
+    text-align: left;
+}
+
+.errorText {
+    line-height: 15px;
+    color: #CB3D40;
+}

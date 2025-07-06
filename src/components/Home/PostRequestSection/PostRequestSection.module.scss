@@ -1,0 +1,49 @@
+.outerContainer {
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.container {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    @include bp.respond-desktop {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @include bp.respond-tablet {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @include bp.respond-mobile {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.successContainer {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.successImage {
+    width: 328px;
+    height: auto;
+}

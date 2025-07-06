@@ -1,0 +1,50 @@
+.outerContainer {
+    margin-top: 140px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    margin-left: 0px;
+    margin-right: 0px;
+
+    @include bp.respond-desktop {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @include bp.respond-tablet {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @include bp.respond-mobile {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.cardsContainer {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 29px;
+    justify-items: center;
+
+    @include bp.respond-tablet {
+        gap: 16px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include bp.respond-mobile {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: center;
+}

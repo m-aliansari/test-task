@@ -1,0 +1,13 @@
+.container {
+    width: 380px;
+
+    @include bp.respond-mobile {
+        width: 328px;
+    }
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

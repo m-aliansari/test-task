@@ -1,0 +1,64 @@
+.inputField,
+.inputField::placeholder {
+    font-size: 16px;
+}
+
+.label {
+    font-size: 16px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    font-size: 16px; // Fixed at 16px
+    cursor: pointer;
+    position: relative;
+}
+
+.input {
+    display: none;
+}
+
+.customRadio {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #D0CFCF;
+    border-radius: 50%;
+    margin-right: 12px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s;
+    position: relative;
+}
+
+.input:checked+.customRadio {
+    border-color: #00cfff;
+}
+
+.input:checked+.customRadio::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #00cfff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    user-select: none;
+    font-size: 16px;
+}
